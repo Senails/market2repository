@@ -1,0 +1,250 @@
+header {
+  width: 100%;
+  min-width: 350px;
+  height: 50px;
+  background-color: #17181A;
+  position: fixed;
+  top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 10;
+}
+header > .mobilemenu {
+  display: block;
+}
+header > .nameheader {
+  position: absolute;
+  left: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header > .corona {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 50px;
+  background-image: url("./image/corona.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header > nav {
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > nav > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2F3032;
+  background-size: contain;
+  transition: 0.3s all;
+}
+header > nav > div:nth-child(1) {
+  background-image: url("./image/Mask group.png");
+}
+header > nav > div:nth-child(2) {
+  background-image: url("./image/Mask group-1.png");
+}
+header > nav > div:nth-child(3) {
+  background-image: url("./image/Mask group-2.png");
+}
+header > nav > div:nth-child(4) {
+  background-image: url("./image/zz.png");
+}
+header > nav > div:nth-child(5) {
+  background-image: url("./image/Mask group-4.png");
+}
+header > nav > div:nth-child(6) {
+  background-image: url("./image/Group 74.png");
+}
+header > nav > div:nth-child(6) > a:nth-child(1) {
+  display: block;
+}
+header > nav > div:nth-child(6) > a:nth-child(2) {
+  display: none;
+}
+@media (max-width: 1000px) {
+  header > nav > div:nth-child(6) > a:nth-child(1) {
+    display: none;
+  }
+  header > nav > div:nth-child(6) > a:nth-child(2) {
+    display: block;
+  }
+}
+header > nav > div:hover, header > nav > div.active {
+  background-color: white;
+}
+header > nav > div:nth-child(6):hover {
+  background-color: #2F3032;
+}
+@media (min-width: 1000px) {
+  header > nav > div:nth-child(6):hover {
+    background-image: url("./image/Mask group-6.png");
+  }
+}
+header > nav > div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+@media (max-width: 700px) {
+  header {
+    height: 70px;
+    position: absolute;
+  }
+  header > nav {
+    display: none;
+  }
+  header .corona {
+    top: 10px;
+    right: 10px;
+    width: 68px;
+    height: 50px;
+  }
+  header > .nameheader {
+    position: absolute;
+    line-height: 70px;
+    left: calc(50% - 74px);
+  }
+  header > .mobilemenu {
+    z-index: 2;
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 50px;
+    height: 100px;
+    transition: 0.5s;
+    border-radius: 25px;
+  }
+  header > .mobilemenu > .button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #17181A;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  header > .mobilemenu > .button > div {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 26px;
+    height: 2px;
+    transition: 0.5s all;
+    background-color: white;
+  }
+  header > .mobilemenu > .button > div:nth-child(2) {
+    top: 24px;
+    opacity: 1;
+  }
+  header > .mobilemenu > .button > div:nth-child(3) {
+    top: auto;
+    bottom: 15px;
+  }
+  header > .mobilemenu .contei {
+    position: relative;
+    height: 0px;
+    transition: 0.5s;
+    width: 70px;
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+    transform: translateX(-10px);
+  }
+  header > .mobilemenu .contei > div {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s top;
+    background-size: contain;
+    background-color: #161616;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  }
+  header > .mobilemenu .contei > div:nth-child(1) {
+    top: -360px;
+    background-image: url("./image/Mask group.png");
+  }
+  header > .mobilemenu .contei > div:nth-child(2) {
+    top: -300px;
+    background-image: url("./image/Mask group-1.png");
+  }
+  header > .mobilemenu .contei > div:nth-child(3) {
+    top: -240px;
+    background-image: url("./image/Mask group-2.png");
+  }
+  header > .mobilemenu .contei > div:nth-child(4) {
+    top: -190px;
+    background-image: url("./image/Mask group-3.png");
+  }
+  header > .mobilemenu .contei > div:nth-child(5) {
+    top: -120px;
+    background-image: url("./image/Mask group-4.png");
+  }
+  header > .mobilemenu .contei > div:nth-child(6) {
+    top: -60px;
+    background-image: url("./image/Group 59.png");
+  }
+  header > .mobilemenu .contei > div.active {
+    background-color: #fff;
+  }
+  header > .mobilemenu .contei > div > a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  header.active > .mobilemenu {
+    height: 420px;
+  }
+  header.active > .mobilemenu .contei {
+    height: 360px;
+  }
+  header.active > .mobilemenu .contei > div:nth-child(1) {
+    top: 10px;
+  }
+  header.active > .mobilemenu .contei > div:nth-child(2) {
+    top: 70px;
+  }
+  header.active > .mobilemenu .contei > div:nth-child(3) {
+    top: 130px;
+  }
+  header.active > .mobilemenu .contei > div:nth-child(4) {
+    top: 190px;
+  }
+  header.active > .mobilemenu .contei > div:nth-child(5) {
+    top: 250px;
+  }
+  header.active > .mobilemenu .contei > div:nth-child(6) {
+    top: 310px;
+  }
+  header.active > .mobilemenu .button > div:nth-child(1) {
+    top: 24px;
+    transform: rotate(-225deg);
+  }
+  header.active > .mobilemenu .button > div:nth-child(2) {
+    opacity: 0;
+    transition: 0s all;
+  }
+  header.active > .mobilemenu .button > div:nth-child(3) {
+    bottom: 24px;
+    transform: rotate(225deg);
+  }
+}

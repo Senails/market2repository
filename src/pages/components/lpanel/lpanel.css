@@ -1,0 +1,32 @@
+.lpanel {
+  position: fixed;
+  z-index: 10;
+  width: 5vh;
+  height: 16.5vh;
+  right: 1vh;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lpanel > div {
+  width: 5vh;
+  height: 5vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lpanel > div:nth-child(1) {
+  background-image: url("./FiGit/fixed1.png");
+}
+.lpanel > div:nth-child(2) {
+  background-image: url("./FiGit/fixed2.png");
+}
+.lpanel > div:nth-child(3) {
+  background-image: url("./FiGit/fixed3.png");
+}
+.lpanel > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

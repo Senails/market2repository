@@ -1,0 +1,8 @@
+.blackmarket {
+  position: relative;
+  overflow: hidden;
+  min-width: 350px;
+  min-height: 100vh;
+  background-color: white;
+  padding-bottom: 200px;
+}

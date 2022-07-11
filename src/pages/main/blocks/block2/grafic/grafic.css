@@ -1,0 +1,219 @@
+.grafic {
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+.grafic .graff {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 300px;
+}
+.grafic .graff .razmetca {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 270px;
+}
+.grafic .graff .razmetca .lstrelka {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 30px;
+  background-image: url("./image/Vector 4 (1).svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.grafic .graff .razmetca .rstrelka {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  width: 45px;
+  background-image: url("./image/Vector 4 (2).svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.grafic .graff .razmetca .vline1 {
+  position: absolute;
+  width: 2px;
+  height: calc(100% - 55px);
+  bottom: 14px;
+  left: 12px;
+  background: rgba(126, 125, 123, 0.5);
+}
+.grafic .graff .razmetca .vline2 {
+  position: absolute;
+  width: 2px;
+  height: calc(100% - 55px);
+  bottom: 14px;
+  left: 15px;
+  background: #7E7D7B;
+}
+.grafic .graff .razmetca .gline1 {
+  position: absolute;
+  width: calc(100% - 53px);
+  height: 2px;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(126, 125, 123, 0.5);
+}
+.grafic .graff .razmetca .gline2 {
+  position: absolute;
+  width: calc(100% - 53px);
+  height: 2px;
+  bottom: 15px;
+  left: 12px;
+  background: #7E7D7B;
+}
+.grafic .graff .contei {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 30px - 45px);
+  left: 30px;
+  overflow: hidden;
+}
+.grafic .graff .contei .grafi {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  transform: translateX(-20px);
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.grafic .graff .vgran {
+  z-index: 3;
+  position: absolute;
+  left: 35px;
+  top: 10px;
+  height: 20px;
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.grafic .graff .vgran .silv {
+  height: 20px;
+  width: 20px;
+  background-image: url("./image/silver.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grafic .graff .vgran p {
+  color: #e0e0e0;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.grafic .graff .ngran {
+  z-index: 3;
+  position: absolute;
+  left: 35px;
+  bottom: 55px;
+  height: 20px;
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.grafic .graff .ngran .silv {
+  height: 20px;
+  width: 20px;
+  background-image: url("./image/silver.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grafic .graff .ngran p {
+  color: #e0e0e0;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.grafic > .selector {
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.grafic > .selector .variel {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2F3032;
+  line-height: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.2s;
+  color: white;
+  border: 2px solid white;
+}
+.grafic > .selector .variel.active {
+  color: #ECC232;
+  border: 2px solid #ECC232;
+}
+.grafic .kurs {
+  position: absolute;
+  bottom: 0;
+  right: 223px;
+  width: 140px;
+  height: 40px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grafic .kurs .moni {
+  width: 30px;
+  height: 30px;
+  background-image: url("./image/gold.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.grafic .kurs .silver {
+  width: 24px;
+  height: 24px;
+  background-image: url("./image/silver.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.grafic .kurs p {
+  width: 30px;
+  height: 30px;
+  color: #e0e0e0;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.grafic .kurs span {
+  display: block;
+  width: 55px;
+  height: 30px;
+  color: #e0e0e0;
+  line-height: 34px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+@media (max-width: 700px) {
+  .grafic {
+    height: 400px;
+  }
+  .grafic > .selector {
+    right: calc(50% - 70px);
+  }
+  .grafic .kurs {
+    bottom: 55px;
+    right: calc(50% - 70px);
+  }
+}

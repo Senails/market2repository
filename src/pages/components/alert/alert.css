@@ -1,0 +1,62 @@
+.alert {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.alert > .massage {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #262727;
+  padding: 30px 40px;
+}
+.alert > .massage .worker {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url("./image/worker_1_ 2.png");
+  background-size: contain;
+  transform: translateX(-10px);
+  margin-bottom: 20px;
+}
+.alert > .massage p {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.alert > .massage .crestik {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+.alert > .massage .crestik > div {
+  position: absolute;
+  top: 19px;
+  left: 5px;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}
+.alert > .massage .crestik > div:nth-child(1) {
+  transform: rotate(45deg);
+}
+.alert > .massage .crestik > div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.alert > .massage .crestik:hover > div {
+  background-color: rgb(230, 100, 100);
+}

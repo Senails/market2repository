@@ -1,0 +1,31 @@
+.block23 {
+  width: 100%;
+  min-height: calc(100vh - 920px);
+  background-color: #3f434a;
+  position: relative;
+}
+.block23 .poloska {
+  z-index: 5;
+  bottom: -5px;
+  left: -10px;
+  position: absolute;
+  width: calc(100% + 20px);
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2F3032;
+}
+.block23 .poloska > div {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: #2F3032;
+}
+.block23 .poloska:nth-child(2) {
+  bottom: auto;
+  top: -5px;
+}
+.block23 .conteiner {
+  min-height: 0px;
+}

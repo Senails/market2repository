@@ -1,0 +1,57 @@
+.block1 {
+  width: 100%;
+  height: 730px;
+  background-image: url("./image/rert.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.block1 .shadow {
+  position: absolute;
+  top: -20%;
+  width: 100%;
+  height: 140%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0) 80.21%);
+  border-radius: 50%;
+}
+.block1 .logo {
+  position: absolute;
+  top: calc(50% - 115px);
+  left: calc(50% - 170px);
+  width: 340px;
+  height: 230px;
+  background-image: url("./image/logo 1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.block1 .dshadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.block1 .dshadow > div {
+  position: absolute;
+  z-index: 4;
+  top: 50px;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 -100%, rgba(0, 0, 0, 0) 95%);
+}
+.block1 .dshadow > div:nth-child(2) {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(0deg, #000000 -100%, rgba(0, 0, 0, 0) 95%);
+}
+@media (max-width: 700px) {
+  .block1 {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,158 @@
+.block4 {
+  height: 700px;
+  background-image: url("./image/feature-visual--trade 3.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(108, 108, 108);
+  position: relative;
+}
+.block4 .blockk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.block4 .blockk .mapa {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 300px;
+  background-image: url("../../image/1614255871_333 1 (1) 2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.block4 .blockk .shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.block4 .blockk .box {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 300px;
+}
+.block4 .blockk .box .city {
+  position: absolute;
+  width: 10.44%;
+  height: 15.66%;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.block4 .blockk .box .city:nth-child(1) {
+  top: 15.7%;
+  left: 30.13%;
+  background-image: url("./image/Group 44.svg");
+  filter: drop-shadow(0px 0px 20px #7229f9);
+}
+.block4 .blockk .box .city:nth-child(2) {
+  top: 15.9%;
+  left: 56.22%;
+  background-image: url("./image/Group 43.svg");
+  filter: drop-shadow(0px 0px 20px #fff);
+}
+.block4 .blockk .box .city:nth-child(3) {
+  top: 50.33%;
+  left: 66.17%;
+  background-image: url("./image/Group 47.svg");
+  filter: drop-shadow(0px 0px 20px #3af929);
+}
+.block4 .blockk .box .city:nth-child(4) {
+  top: 72.93%;
+  left: 44.82%;
+  background-image: url("./image/Group 45.svg");
+  filter: drop-shadow(0px 0px 20px #f9dd29);
+}
+.block4 .blockk .box .city:nth-child(5) {
+  top: 53.86%;
+  left: 23.59%;
+  background-image: url("./image/Group 46.svg");
+  filter: drop-shadow(0px 0px 20px #29e4f9);
+}
+.block4 .blockk .box .road {
+  position: absolute;
+  width: 44.44%;
+  height: 63.27%;
+  top: 18.08%;
+  left: 26.86%;
+  background-image: url("./image/rrrrr.svg");
+  background-size: contain;
+}
+.block4 .blockk .box .ancer {
+  z-index: 7;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+.block4 .poloska {
+  z-index: 5;
+  bottom: -5px;
+  left: -10px;
+  position: absolute;
+  width: calc(100% + 20px);
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2F3032;
+}
+.block4 .poloska > div {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: #2F3032;
+}
+.block4 .dshadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.block4 .dshadow > div {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 -100%, rgba(0, 0, 0, 0) 95%);
+}
+.block4 .dshadow > div:nth-child(2) {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(0deg, #000000 -100%, rgba(0, 0, 0, 0) 95%);
+}
+@media (max-width: 1000px) {
+  .block4 .blockk {
+    width: 100%;
+  }
+  .block4 .blockk .shadow {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+@media (max-width: 700px) {
+  .block4 {
+    height: 500px;
+  }
+  .block4 .blockk .mapa {
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 200px;
+  }
+  .block4 .blockk .box {
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 200px;
+  }
+}

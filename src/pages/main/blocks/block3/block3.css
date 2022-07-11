@@ -1,0 +1,169 @@
+.block3 {
+  height: 700px;
+  background-image: url("./image/Mask group (1).png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(126, 94, 110);
+  position: relative;
+}
+.block3 .blockk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.block3 .blockk .mapa {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 300px;
+  background-image: url("../../image/1614255871_333 1 (1) 2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.block3 .blockk .shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.block3 .blockk .box {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 300px;
+}
+.block3 .blockk .box .city {
+  z-index: 6;
+  position: absolute;
+  height: 15.66%;
+  width: 10.44%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.block3 .blockk .box .city:nth-child(1) {
+  top: 8.4%;
+  left: 25.2%;
+  background-image: url("./image/Group 51.svg");
+  filter: drop-shadow(0px 0px 20px #7229f9);
+}
+.block3 .blockk .box .city:nth-child(2) {
+  top: 10.8%;
+  left: 55.4%;
+  background-image: url("./image/Group 50.svg");
+  filter: drop-shadow(0px 0px 20px #ffffff);
+}
+.block3 .blockk .box .city:nth-child(3) {
+  top: 39.9%;
+  left: 71%;
+  background-image: url("./image/Group 54.svg");
+  filter: drop-shadow(0px 0px 20px #3af929);
+}
+.block3 .blockk .box .city:nth-child(4) {
+  top: 68%;
+  left: 43.2%;
+  background-image: url("./image/Group 52.svg");
+  filter: drop-shadow(0px 0px 20px #f9dd29);
+}
+.block3 .blockk .box .city:nth-child(5) {
+  top: 42.4%;
+  left: 18.4%;
+  background-image: url("./image/Group 53.svg");
+  filter: drop-shadow(0px 0px 20px #29e4f9);
+}
+.block3 .blockk .box .city:nth-child(6) {
+  height: 18.466%;
+  width: 12.31%;
+  top: 34.8%;
+  left: 41.4%;
+  filter: drop-shadow(0px 0px 20px #f92929);
+  background-image: url("./image/Group 58.svg");
+}
+.block3 .blockk .box .strelki {
+  position: absolute;
+  top: 24.18%;
+  left: 30.53%;
+  width: 38.3%;
+  height: 42.7%;
+  background-image: url("./image/vasv.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.block3 .blockk .box .ancer {
+  z-index: 7;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+.block3 .poloska {
+  z-index: 5;
+  bottom: -5px;
+  left: -10px;
+  position: absolute;
+  width: calc(100% + 20px);
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2F3032;
+}
+.block3 .poloska > div {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: #2F3032;
+}
+.block3 .dshadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.block3 .dshadow > div {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 -100%, rgba(0, 0, 0, 0) 95%);
+}
+.block3 .dshadow > div:nth-child(2) {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(0deg, #000000 -100%, rgba(0, 0, 0, 0) 95%);
+}
+@media (max-width: 1000px) {
+  .block3 .blockk {
+    width: 100%;
+  }
+  .block3 .blockk .shadow {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+@media (max-width: 700px) {
+  .block3 {
+    height: 500px;
+  }
+  .block3 .blockk .mapa {
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 200px;
+  }
+  .block3 .blockk .box {
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 200px;
+  }
+}

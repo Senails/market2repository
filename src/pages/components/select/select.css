@@ -114,7 +114,7 @@
     transform: skewX(-30deg);
     overflow: hidden;
     border-radius: 5px;
-    transition: 1s;
+    transition: 0.5s;
   }
   .select > .mobile .contei .selm:nth-child(5) {
     margin-right: 0px;
